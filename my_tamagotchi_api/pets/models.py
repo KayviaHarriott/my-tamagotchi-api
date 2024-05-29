@@ -13,6 +13,7 @@ class CustomPet(models.Model):
     health_level = models.IntegerField(default=0) # max 100
     hunger_level = models.IntegerField(default=0) # max 100
     happiness_level = models.IntegerField(default=0) # max 100
+    thirst_level = models.IntegerField(default=0) # max 100
     bathroom_level = models.IntegerField(default=0) # max 100
     friendliness = models.IntegerField(default=0) # max 100
     # likes = ArrayField(models.CharField(max_length=255), blank=True, default=list)

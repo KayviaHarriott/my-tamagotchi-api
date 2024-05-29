@@ -8,7 +8,7 @@ class PetSerializer(serializers.ModelSerializer):
         model = CustomPet
         fields = [
             'id', 'name', 'species', 'age', 'status', 'health_level',
-            'hunger_level', 'happiness_level', 'bathroom_level',
+            'hunger_level', 'thirst_level','happiness_level', 'bathroom_level',
             'friendliness'
             #, 'likes', 'dislikes'
         ]
