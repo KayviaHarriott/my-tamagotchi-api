@@ -6,4 +6,9 @@ from .models import CustomPet
 class PetSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomPet
-        fields = ['id', 'name', 'species', 'age', 'hunger_level', 'happiness_level']
+        fields = [
+            'id', 'name', 'species', 'age', 'status', 'health_level',
+            'hunger_level', 'happiness_level', 'bathroom_level',
+            'friendliness'
+            #, 'likes', 'dislikes'
+        ]

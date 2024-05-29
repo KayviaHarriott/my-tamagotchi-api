@@ -11,3 +11,7 @@ class PetListCreateView(generics.ListCreateAPIView):
 class PetRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = CustomPet.objects.all()
     serializer_class = PetSerializer
+
+class PetDetailView(generics.RetrieveAPIView):
+    queryset = CustomPet.objects.all()
+    serializer_class = PetSerializer
